@@ -5,7 +5,14 @@ services:
     volumes:
       - ./shareddir:/shareddir
 
-#  run-server:
-#   build: run-server/
+  run-server:
+    image: tomcat:9.0.8-jre8-alpine
+    volumes:
+      - ./shareddir:/usr/local/tomcat/webapps
+    depends_on:
+      - build-server
+      -
+
+
 
 
