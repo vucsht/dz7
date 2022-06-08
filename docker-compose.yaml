@@ -4,6 +4,6 @@ services:
     build: build-server/
 
 
-  run-server:
-    build: run-server/
+#  run-server:
+#   build: run-server/
 
