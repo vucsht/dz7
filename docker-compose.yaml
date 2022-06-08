@@ -11,7 +11,7 @@ services:
       - ./shareddir:/usr/local/tomcat/webapps
     depends_on:
       - build-server
-      -
+
 
 
 
