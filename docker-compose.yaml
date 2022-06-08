@@ -6,7 +6,7 @@ services:
       - ./shareddir:/shareddir
 
   run-server:
-    image: tomcat:7-jre8-alpine
+    image: tomcat:9.0.8-jre8-alpine
     ports:
       - "8080:8080"
     volumes:
