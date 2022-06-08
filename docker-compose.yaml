@@ -2,8 +2,14 @@ version: '3'
 services:
   build-server:
     build: build-server/
-
+    volumes:
+      - type: volume
+        source: shareddir
+        target: /shareddir
 
 #  run-server:
 #   build: run-server/
 
+
+volumes:
+  shareddir:

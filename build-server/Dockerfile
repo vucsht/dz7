@@ -9,8 +9,4 @@ RUN apt install curl -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR boxfuse-sample-java-war-hello/
 RUN mvn package
-
-EXPOSE 8080
-#RUN cp /boxfuse-sample-java-war-hello/target/hello-1.0.war /opt/tomcat/webapps/
-#CMD ["/opt/tomcat/bin/catalina.sh", "run"]
-CMD ["/bin/bash"]
+CMD ["cp","/boxfuse-sample-java-war-hello/target/hello-1.0.war", "/shareddir"]
