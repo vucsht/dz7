@@ -1,0 +1,9 @@
+version: '3'
+services:
+  build-server:
+    build: build-server/
+
+
+  run-server:
+    build: run-server/
+
