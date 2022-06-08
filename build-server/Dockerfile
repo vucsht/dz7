@@ -13,3 +13,4 @@ RUN mvn package
 EXPOSE 8080
 #RUN cp /boxfuse-sample-java-war-hello/target/hello-1.0.war /opt/tomcat/webapps/
 #CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["/bin/bash"]
